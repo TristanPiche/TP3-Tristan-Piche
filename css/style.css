@@ -7,7 +7,7 @@
 
 .container-flex{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .container{
@@ -18,20 +18,48 @@
 
 
 /** element pour la nav**/
-img{
+.logo{
     width: 200px;
+    height: 215px;
 }
 
 body{
     background-color: #fff4e6;
 }
 
-li a{
-    color: #8b1e1e ;
-    text-decoration: none;
-    font-size: 25px;
-
-}
 ul{
     margin-right: 30px;
+}
+
+
+/** bouton **/
+
+.bouton1{
+    display: flex;
+    color: #8b1e1e ;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+.bouton1:visited{
+    color: #1e2929;
+}
+
+.bouton1:hover{
+    color: #561313;
+    transform: scale(1.2);
+    text-shadow: 2px 2px 1px #1e292933;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.bouton1:active{
+    color: #f4b400;
+    transform: scale(1.15);
+}
+
+.logo:active{
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
 }
