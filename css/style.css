@@ -31,24 +31,23 @@ ul{
     margin-right: 30px;
 }
 
-
+.pageActuelle{
+    border-bottom:2px solid #f4b400;
+    border-radius: 3px;
+}
 /** bouton **/
 
 .bouton1{
     display: flex;
     color: #8b1e1e ;
     text-decoration: none;
-    font-size: 18px;
-    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 20px;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 
-}
-
-.bouton1:visited{
-    color: #1e2929;
 }
 
 .bouton1:hover{
-    color: #561313;
+    color: #f4b400;
     transform: scale(1.2);
     text-shadow: 2px 2px 1px #1e292933;
     transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
@@ -56,10 +55,44 @@ ul{
 
 .bouton1:active{
     color: #f4b400;
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 .logo:active{
     transform: scale(1.02);
     transition: transform 0.3s ease;
+}
+
+.commande{
+    display: flex;
+    color: #f4b400;
+    text-shadow:0.75px 0.75px #2c2c2c;
+    border: 2px solid #8b1e1e;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 3px;
+    background-color: #fff6eb;
+    transition: transform 0.3s ease, color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease ;
+}
+
+.commande:hover{
+    color: #8b1e1e;
+    border: 2px solid #f4b400;
+    box-shadow: 3px 3px #2c2c2c;
+    text-shadow: 0.75px 0.75px #fff6eb;
+    transform: scale(1.2);
+    transition: transform 0.3s ease, color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease ;
+}
+
+.commande:active{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/** contenu de page accueil**/
+
+.titre{
+    display: flex;
+    align-items: center;
+    color:#2c2c2c;
 }
