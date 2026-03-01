@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Big Burger Legacy | Réservation</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/97577d643c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -22,7 +26,9 @@
                 <a href="index.html" class="bouton1">Accueil</a>
               </ul>
               <ul>
-                <a href="reservation.html" class="bouton1 pageActuelle">Réservation</a>
+                <a href="reservation.html" class="bouton1 pageActuelle"
+                  >Réservation</a
+                >
               </ul>
               <ul>
                 <a href="restaurant.html" class="bouton1">Restaurant</a>
@@ -38,12 +44,196 @@
     <main>
       <section>
         <div class="container">
-          <div class="titre">
-            <h1>Réservation</h1>
+          <div class="frm-flex1">
+            <div class="frm-border">
+              <div class="titre-reservation">
+                <h1>Réservation</h1>
+              </div>
+              <div class="frm-flex">
+                <form
+                  action="confirmation.html"
+                  id="frm-reservation"
+                >
+                  <div class="champs-obligatoire">
+                    <p class="p">champs obligatoire</p>
+                    <p class="icone-obligatoire">*</p>
+                  </div>
+                  <div class="frm-grid">
+                    <fieldset>
+                      <legend>Info Client</legend>
+                      <div class="frm-info">
+                        <div class="obliger">
+                          <label for="text-nom">Nom: </label>
+                          <p class="icone-obligatoire">*</p>
+                        </div>
+                        <input
+                          type="text"
+                          id="text-nom"
+                          name="text-nom"
+                          placeholder="votre nom"
+                          required
+                        />
+                      </div>
+                      <div class="frm-info">
+                        <div class="obliger">
+                          <label for="text-prenom">Prénom: </label>
+                          <p class="icone-obligatoire">*</p>
+                        </div>
+                        <input
+                          type="text"
+                          id="text-prenom"
+                          name="text-prenom"
+                          placeholder="votre prénom"
+                          required
+                        />
+                      </div>
+                      <div class="frm-info">
+                        <div class="obliger">
+                          <label for="num-telephone"
+                            >Numéro de téléphone:
+                          </label>
+                          <p class="icone-obligatoire">*</p>
+                        </div>
+                        <input
+                          type="tel"
+                          id="num-telephone"
+                          name="num-telephone"
+                          placeholder="(555)-555-5555"
+                          required
+                        />
+                      </div>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Info de la Réservation</legend>
+                      <div class="frm-info">
+                        <div class="obliger">
+                          <label for="nbr-personne">
+                            Nombre de personne:
+                          </label>
+                          <p class="icone-obligatoire">*</p>
+                        </div>
+                        <input
+                          type="number"
+                          id="nbr-personne"
+                          name="nbr-personne"
+                          min="1"
+                          max="24"
+                          placeholder="1"
+                          required
+                        />
+                      </div>
+                      <div class="frm-info">
+                        <div class="obliger">
+                          <label for="date">Date de votre réservation: </label>
+                          <p class="icone-obligatoire">*</p>
+                        </div>
+                        <input type="date" id="date" name="date" required />
+                      </div>
+                      <div class="frm-info">
+                        <div class="obliger">
+                          <label for="heure">Heure de votre réservation</label>
+                          <p class="icone-obligatoire">*</p>
+                        </div>
+                        <select name="heure" id="heure" required>
+                          <option value="" selected>
+                            --Sélectionner une heure
+                          </option>
+                          <option value="12:00">12:00</option>
+                          <option value="12:30">12:30</option>
+                          <option value="13:00">13:00</option>
+                          <option value="13:30">13:30</option>
+                          <option value="17:00">17:00</option>
+                          <option value="17:30">17:30</option>
+                          <option value="18:00">18:00</option>
+                          <option value="18:30">18:30</option>
+                          <option value="19:00">19:00</option>
+                          <option value="19:30">19:30</option>
+                          <option value="20:00">20:00</option>
+                          <option value="20:30">20:30</option>
+                          <option value="21:00">21:00</option>
+                        </select>
+                      </div>
+                      <div class="frm-info">
+                        <div class="obliger">
+                          <label for="text-endroit">endroit pour manger:</label>
+                          <p class="icone-obligatoire">*</p>
+                        </div>
+                        <select name="endroit" id="endroit" required>
+                          <option value="" selected>
+                            -- Sélectionner un endroit pour manger
+                          </option>
+                          <option value="salle">Salle à manger</option>
+                          <option value="terrasse">Terrasse</option>
+                        </select>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <fieldset>
+                    <legend>Autres informations (facultatif)</legend>
+                    <div class="frm-info">
+                      <label for="adr-courriel">Adresse courriel: </label>
+                      <input
+                        type="email"
+                        id="adr-courriel"
+                        name="adr-courriel"
+                        placeholder="xyz@exemple.com"
+                      />
+                    </div>
+                    <div class="frm-info">
+                      <label for="message">
+                        contraintes ou précision pour la réservation:</label
+                      >
+                      <textarea
+                        name="message"
+                        id="message"
+                        placeholder="écrire ici"
+                      ></textarea>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="info-lettre"
+                        name="info-lettre"
+                      />
+                      <label for="info-lettre"
+                        >s'inscrire à l'info-lettre</label
+                      >
+                    </div>
+                  </fieldset>
+                  <div class="frm-flex1">
+                    <input
+                      type="submit"
+                      value="Réserver maintenant"
+                      id="submit"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <div class="footer1">
+          <div class="realisation">
+            <i class="fa-solid fa-arrow-right fa-2x"></i>
+            <p>Réalisé par: Tristan Piché</p>
+          </div>
+          <div class="realisation1">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+            <i class="fa-brands fa-facebook fa-2x"></i>
+            <i class="fa-brands fa-tiktok fa-2x"></i>
+            <i class="fa-brands fa-pinterest fa-2x"></i>
+            <p>Réseaux Sociaux:</p>
+          </div>
+        </div>
+        <div class="footer2">
+          <p>Intégration Web 1 : TP3 Site web responsive</p>
+          <p>Cégep de Trois-Rivières</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
