@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 
 
 
@@ -40,6 +42,51 @@ ul{
 
 .pageActuelle:hover{
     border-bottom-color:#8b1e1e;
+}
+
+/** Élément pour Footer**/
+
+.realisation{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.realisation1{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.footer1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #2c2c2c;
+    padding-bottom: 1%;
+}
+
+.realisation img{
+    margin-right:3%;
+}
+
+.realisation1 i:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.realisation1 p{
+    margin-right: 2%;
+}
+
+footer{
+    margin-top: 10%;
+}
+
+.footer2{
+    display: flex;
+    justify-content: space-between;
 }
 /** bouton **/
 
@@ -120,6 +167,23 @@ ul{
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
+
+.continuer a{
+    color: #fff4e6;
+    background-color: #b22222;
+    text-decoration: none;
+    padding: 1%;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.continuer a:hover{
+    transform: scale(1.05);
+    background-color: #8b1e1e;
+    
+}
+
+
 /** contenu de page accueil**/
 
 .titre{
@@ -175,7 +239,7 @@ a img{
 .avisGrid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1%;
+    gap: 5%;
 }
 
 .avisNom{
@@ -189,11 +253,12 @@ a img{
 
 .imgProfile{
     width: 100%;
-    max-width: 75px;
-    height: 75px;
+    max-width: 50px;
+    height: 50px;
     border:1px solid #8b1e1e;
     border-radius: 100%;
     box-shadow: 2px 2px 10px #2c2c2c;
+    padding: 1.5%;
 }
 
 .avis1{
@@ -204,3 +269,189 @@ a img{
 .imgEtoile{
     margin-left: 2.5%;
 }
+
+
+
+/** contenu page réservation**/
+
+#frm-reservation{
+    width: 85%;
+}
+
+.frm-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.frm-border{
+
+    border-radius: 2%;
+    width: 70%;
+    box-shadow: 10px 10px 30px #2c2c2c;
+    overflow: hidden;
+    background-color: #fffaf3;
+}
+
+.frm-border h1{
+    text-align: center;
+}
+
+.frm-flex1{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#submit{
+    margin: 2% 0 5% 0;
+    padding: 2.5% 3%;
+    background-color: #b22222;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+
+}
+
+#submit:hover{
+    background-color: #8b1a1a;
+    transform: scale(1.05);
+}
+
+.frm-info{
+    display: flex;
+    flex-direction: column;
+    padding: 1% 0 3% 0;
+}
+
+#adr-courriel{
+    max-width: 35%;
+    height: 20px;
+}
+
+fieldset{
+    padding: 4%;
+    margin-top: 5%;
+    border: 2px solid #2c2c2cb8;
+    border-radius: 8px;
+}
+
+#message{
+    height: 125px;
+}
+
+#nbr-personne{
+    width: 25%;
+}
+
+#date{
+    width: 25%;
+}
+
+#heure{
+    width: 80%;
+}
+
+#endroit{
+    width: 80%;
+}
+
+#text-nom{
+    width: 75%;
+    height: 25px;
+}
+
+#text-prenom{
+    width: 75%;
+    height: 25px;
+}
+
+#num-telephone{
+    width: 75%;
+    height: 25px;
+}
+
+.frm-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+}
+
+.titre-reservation{
+    background-color: #f4b400;
+    margin-bottom: 5%;
+    padding: 5% 0 5% 0;
+}
+
+.titre-reservation h1{
+    color: #2c2c2cf2;
+    font-weight: bold;
+    font-size: 3rem;
+
+}
+
+.titre-reservation h1{
+    margin: 0;
+}
+
+.champs-obligatoire{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.p{
+    margin: 0;
+}
+
+.icone-obligatoire{
+    color: red;
+    margin:0 0 0 2%;
+
+}
+
+.obliger {
+    display: flex;
+}
+
+/* contenu de page de confirmation*/
+
+.confirmation{
+    display: flex;
+    justify-content: center;
+    background-color: #f4b400;
+}
+
+.confirmation-box{
+    overflow: hidden;
+    background-color: white;
+    width: 35%;
+    border-radius: 15px;
+    padding-bottom: 2%;
+    box-shadow:10px 10px 25px #2c2c2c;
+}
+
+.continuer{
+    display: flex;
+    justify-content: center;
+
+}
+
+.confirmation-flex{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.msg-confirmation{
+    text-align: center;
+    padding: 5% 0 7% 0;
+}
+
+.msg-confirmation p{
+    font-weight: bold;
+    color: #2c2c2cda;
+}
+
+
