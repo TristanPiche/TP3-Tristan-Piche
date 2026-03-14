@@ -101,7 +101,7 @@ footer{
 
 .bouton1:hover{
     color: #f4b400;
-    transform: scale(1.2);
+    transform: scale(1.1);
     text-shadow: 2px 2px 1px #1e292933;
     transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
 }
@@ -171,8 +171,9 @@ footer{
 .continuer a{
     color: #fff4e6;
     background-color: #b22222;
+    font-weight: bold;
     text-decoration: none;
-    padding: 1%;
+    padding: 2%;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
@@ -182,6 +183,8 @@ footer{
     background-color: #8b1e1e;
     
 }
+
+
 
 
 /** contenu de page accueil**/
@@ -441,7 +444,7 @@ fieldset{
 .confirmation-flex{
     display: flex;
     justify-content: center;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .msg-confirmation{
@@ -452,6 +455,11 @@ fieldset{
 .msg-confirmation p{
     font-weight: bold;
     color: #2c2c2cda;
+}
+
+.page-confirmation{
+    display: flex;
+    justify-content: center;
 }
 
 /* contenu de page restaurant */
@@ -489,9 +497,43 @@ fieldset{
     grid-row: 1 / 3 ;
 }
 
+
 .img-hover:hover{
     transform: scale(1.015);
     transition: transform 0.3s ease;
 }
+
+.adr-flex{
+    display:flex;
+    margin-top: 15%;
+    justify-content: space-between;
+}
+
+.map{
+    border: 2px solid rgba(0, 0, 0, 0.719);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 10px 10px 25px black;
+}
+
+.bloc-adr h2{
+    font-size: 35px;
+    color: #2c2c2c;
+}
+
+.bloc-adr a{
+    text-decoration: none;
+    color: #8b1a1a;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+.unit-adr{
+    padding-bottom: 12%;
+}
+
+
 
 
