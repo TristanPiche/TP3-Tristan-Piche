@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Big Burger Legacy | Commande</title>
     <link rel="stylesheet" href="css/style.css" />
+    <meta
+      name="description"
+      content="Commande en ligne chez Big Burger Legacy. Découvrez nos burgers savoureux et passez votre commande en quelques clics."
+    />
     <script
       src="https://kit.fontawesome.com/97577d643c.js"
       crossorigin="anonymous"
@@ -47,95 +51,130 @@
     <main>
       <section>
         <div class="container">
-          <div class="titre">
-            <h1>Ma commande</h1>
+          <div class="titre-table-flex">
+            <div class="titre-commande">
+              <h1>Ma commande</h1>
+            </div>
+            <p>
+              ** Tout nos plats principaux viennent avec un acompagnement de
+              votre choix (des extras peuvent s'appliquer)
+            </p>
           </div>
         </div>
       </section>
       <section>
         <div class="container">
-          <h2>Entrées</h2>
-          <p>** tout nos plats viennent avec un acompagnement de votre choix (des extras peuvent s'appliquer)</p>
-          <table>
-            <thead>
-              <tr>
-                <th>Les plats d'Entrées</th>
-                <th>Prix</th>
-                <th>Quantité</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>Chilly Cheese nuggets</th>
-                <td>9.99$</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <th>Bacon Jalapeño Poppers</th>
-                <td>6.99$</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <th>Mini burgers legacy</th>
-                <td>16.99$</td>
-                <td>1</td>
-              </tr>
-            </tbody>
-          </table>
-          <h2>Plats Principaux</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Les plats Principaux</th>
-                <th>Prix</th>
-                <th>Quantité</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>The Big Legacy Burger</th>
-                <td>19.99$</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <th>the Smoky burger</th>
-                <td>21.99$</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <th>The Ultimate Burger </th>
-                <td>24.99$</td>
-                <td>1</td>
-              </tr>
-            </tbody>
-          </table>
-          <h2>Accompagnement</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>les Accompagnements</th>
-                <th>Prix</th>
-                <th>Quantité</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>Les frites Maisons</th>
-                <td>+ 0.00$</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <th>La Legacy Poutine</th>
-                <td>+ 5.99$</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <th>les Oignons Rings</th>
-                <td>+ 2.99$</td>
-                <td>1</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="total-flex">
+            <div class="tbl-plat">
+              <h2>Entrées</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th class="tbl-col-name">Les Plats d'Entrées</th>
+                    <th class="tbl-col-price">Prix</th>
+                    <th class="tbl-col-qte">Quantité</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Chilly Cheese Nuggets</th>
+                    <td>9.99$</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <th>Bacon Jalapeño Poppers</th>
+                    <td>6.99$</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th class="tbl-row-name">Mini Burgers Legacy</th>
+                    <td>16.99$</td>
+                    <td class="tbl-row-qte">1</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2>Plats Principaux</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th class="tbl-col-name">Les Plats Principaux</th>
+                    <th class="tbl-col-price">Prix</th>
+                    <th class="tbl-col-qte">Quantité</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>The Big Legacy Burger</th>
+                    <td>19.99$</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <th>the Smoky Burger</th>
+                    <td>21.99$</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th class="tbl-row-name">The Ultimate Burger</th>
+                    <td>24.99$</td>
+                    <td class="tbl-row-qte">1</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2>À-côtés</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th class="tbl-col-name">les à-côtés</th>
+                    <th class="tbl-col-price">Prix</th>
+                    <th class="tbl-col-qte">Quantité</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Les Frites Maisons</th>
+                    <td>+ 0.00$</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <th>La Legacy Poutine</th>
+                    <td>+ 5.99$</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th class="tbl-row-name">Les Oignons Rings</th>
+                    <td>+ 2.99$</td>
+                    <td class="tbl-row-qte">1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <table class="total">
+              <thead>
+                <tr>
+                  <th colspan="2" class="tbl-detail">Détails</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Sous-Total:</th>
+                  <td>139.90$</td>
+                </tr>
+                <tr>
+                  <th>Taxes:</th>
+                  <td>20.98$</td>
+                </tr>
+                <tr>
+                  <th>total:</th>
+                  <td>160.88$</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colspan="2"><button>commander</button></th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
         </div>
       </section>
     </main>

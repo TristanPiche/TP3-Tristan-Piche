@@ -78,6 +78,7 @@ ul{
 
 .realisation1 p{
     margin-right: 2%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 footer{
@@ -88,6 +89,14 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+
+.realisation p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer2 p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 /** bouton **/
 
 .bouton1{
@@ -96,6 +105,7 @@ footer{
     text-decoration: none;
     font-size: 20px;
     transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
@@ -119,6 +129,7 @@ footer{
 .commande{
     display: flex;
     align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #f4b400;
     text-shadow:0.75px 0.75px #2c2c2c;
     border: 2px solid #8b1e1e;
@@ -147,6 +158,7 @@ footer{
     display: flex;
     align-items: center;
     text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #8b1e1e;
     border: 2px solid #f4b400;
     border-radius: 5px;
@@ -192,6 +204,7 @@ footer{
 .titre{
 
     display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:#2c2c2c;
     margin: 0 0 2%;
     font-size: 45px;
@@ -216,6 +229,7 @@ a img{
 .pageAccueil p{
     margin-bottom: 8%;
     width: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 
@@ -252,6 +266,7 @@ a img{
 
 .avisTexte{
     margin-top: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .imgProfile{
@@ -273,7 +288,13 @@ a img{
     margin-left: 2.5%;
 }
 
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 /** contenu page réservation**/
 
@@ -315,12 +336,14 @@ a img{
     font-weight: bold;
     font-size: 1rem;
     transition: all 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 
 #submit:hover{
     background-color: #8b1a1a;
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .frm-info{
@@ -384,6 +407,7 @@ fieldset{
 
 .titre-reservation{
     background-color: #f4b400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 5%;
     padding: 5% 0 5% 0;
 }
@@ -406,6 +430,7 @@ fieldset{
 
 .p{
     margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .icone-obligatoire{
@@ -418,12 +443,21 @@ fieldset{
     display: flex;
 }
 
+legend{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 /* contenu de page de confirmation*/
 
 .confirmation{
     display: flex;
     justify-content: center;
     background-color: #f4b400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .confirmation-box{
@@ -441,6 +475,10 @@ fieldset{
 
 }
 
+.continuer a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .confirmation-flex{
     display: flex;
     justify-content: center;
@@ -455,6 +493,7 @@ fieldset{
 .msg-confirmation p{
     font-weight: bold;
     color: #2c2c2cda;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .page-confirmation{
@@ -534,6 +573,131 @@ fieldset{
     padding-bottom: 12%;
 }
 
+address{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
+/* contenu page commande */
 
+.titre-commande{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+.titre-table-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titre-table-flex p{
+    max-width: 30%;
+    border: 2px solid #2c2c2c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    padding: 1%;
+    color: #8b1e1e;
+
+}
+
+table{
+    border: 2px solid #2c2c2c;
+    border-radius: 15px;
+    border-collapse: separate;
+    border-spacing: 3px;
+    box-shadow: 3px 3px 5px #2c2c2c;
+}
+
+tbody tr th{
+    background-color: lightgrey;
+    padding: 2%;
+}
+
+tbody tr td{
+    background-color: #8b1e1e67;
+    text-align: center;
+}
+
+thead tr th{
+    background-color: #f4b30091;
+    padding: 2%;
+    width: 30%;
+}
+
+.tbl-col-price{
+    width: 5%;
+    text-align: center;
+    margin: 0 2% 0 2%;
+}
+
+.tbl-col-name{
+    border-top-left-radius: 12px;
+}
+
+.tbl-col-qte{
+    border-top-right-radius: 12px;
+    width: 5%;
+}
+
+.tbl-row-name{
+    border-bottom-left-radius: 12px;
+}
+
+.tbl-row-qte{
+    border-bottom-right-radius: 12px;
+}
+
+.total-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total{
+    max-width: 35%;
+    height: 200px;
+}
+
+th button{
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 5px;
+    background-color: #b22222;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    padding: 2%;
+}
+
+th button:hover{
+    color: rgb(222, 222, 222);
+    background-color: #8b1a1a;
+}
+
+th button:active{
+    transform: scale(1.025);
+}
+
+.tbl-detail{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+tfoot tr th{
+    display: flex;
+    justify-content: center;
+}
+
+.tbl-plat{
+    width: 50%;
+}
+th{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+td{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
