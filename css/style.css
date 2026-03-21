@@ -44,6 +44,7 @@ ul{
     border-bottom-color:#8b1e1e;
 }
 
+
 /** Élément pour Footer**/
 
 .realisation{
@@ -286,6 +287,10 @@ a img{
 }
 .imgEtoile{
     margin-left: 2.5%;
+}
+
+.section-avis{
+    margin-top: 10%;
 }
 
 h2{
@@ -700,4 +705,333 @@ th{
 
 td{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* element d'integration responsive*/
+
+
+@media screen and (min-width: 1201px){
+    .container-flex i{
+    display: none;
+}
+}
+
+
+@media screen and (max-width: 1200px){
+    nav{
+        display: none;
+    }
+    .titre{
+        font-size: 35px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 960px){
+    /* page accueil*/
+    .imgBurger{
+        max-width: 85%;
+    }
+
+    .pageAccueil p{
+        font-size: 15px;
+    }
+
+    .avisNom{
+        font-size: 18px;
+    }
+
+    .avisTexte{
+        font-size: 15px;
+    }
+
+    .section-avis h2{
+        font-size: 23px;
+    }
+
+    .section-avis h3{
+        font-size: 18px;
+    }
+
+    .btnReservation{
+        font-size: 15px;
+    }
+
+    .btnCommande{
+        font-size: 15px;
+    }
+
+    /* page commande */
+
+    .titre-commande{
+        font-size: 25px;
+    }
+
+    td{
+        font-size: 15px;
+    }
+
+    th{
+        font-size: 15px;
+    }
+
+    .tbl-plat h2{
+        font-size: 23px;
+    }
+
+
+    /* page reservation*/
+
+    .titre-reservation h1{
+        font-size: 35px;
+    }
+
+    legend{
+        font-size: 15px;
+    }
+
+    label{
+        font-size: 13px;
+    }
+
+    .p{
+        font-size: 15px;
+    }
+
+    /* page confirmation */
+
+    .confirmation{
+        font-size: 15px;
+    }
+
+    .msg-confirmation{
+        font-size: 13px;
+    }
+
+    .continuer{
+        font-size: 13px;
+    }
+
+    /*page restaurant*/
+
+    .titre h1 {
+        font-size: 35px;
+    }
+
+    .unit-adr h2{
+        font-size: 35px;
+    }
+
+    address a{
+        font-size: 15px;
+    }
+
+    iframe{
+        height: 450px;
+        width: 400px;
+    }
+
+    .map{
+        height: 450px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 570px) and (min-width: 484px){
+    
+    /*page accueil*/
+    
+    .titre{
+        font-size: 28px;
+    }
+
+    .pageAccueil p{
+        font-size: 12px;
+    }
+
+    .btnReservation{
+        font-size: 12px;
+        padding: 2%;
+    }
+
+    .btnCommande{
+        font-size: 12px;
+    }
+
+    .btnPageAccueil img{
+        max-width: 40%;
+        padding: 0 1% 0 5%;
+    }
+
+    .btnPageAccueil{
+        gap: 6%;
+    }
+
+    .pageAccueil1{
+        gap: 7%;
+        grid-template-columns: 40% 55%;
+    }
+
+    .section-avis h2{
+        font-size: 18px;
+    }
+
+    .section-avis h3{
+        font-size: 10px;
+    }
+
+    .imgEtoile{
+        max-width: 65%;
+    }
+
+    .avisTexte{
+        font-size: 10px;
+    }
+
+    .imgProfile{
+        max-width: 30%;
+        height: 20%;
+    }
+
+    .realisation1 p{
+        font-size: 12px;
+    }
+
+    .realisation p{
+        font-size: 12px;
+    }
+
+    .footer2 p{
+        font-size: 12px;
+    }
+
+    /*page reservation*/
+
+    .frm-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .titre-reservation h1{
+        font-size: 30px;
+    }
+
+    legend{
+        font-size: 13px;
+    }
+
+    label{
+        font-size: 12px;
+    }
+
+    /* page commande */
+    
+    .titre-commande{
+        font-size: 18px;
+    }
+
+    .tbl-plat h2{
+        font-size: 15px;
+    }
+    
+    .total-flex{
+        flex-direction: column;
+        
+    }
+
+    .total{
+        margin-top: 10%;
+    }
+
+    th{
+        font-size: 10px;
+    }
+
+    td{
+        font-size: 10px;
+    }
+
+    .titre-table-flex p{
+        font-size: 10px;
+    }
+
+    th button{
+        font-size: 10px;
+    }
+
+    /* page confirmation */
+
+    .confirmation{
+        font-size: 8px;
+    }
+
+    .msg-confirmation{
+        font-size: 8px;
+    }
+
+    .continuer{
+        font-size: 8px;
+    }
+
+    /*page restaurant*/
+
+    .unit-adr h2{
+        font-size: 20px;
+    }
+
+    .titre h1{
+        font-size: 30px;
+    }
+
+    .bloc-adr a {
+        font-size: 13px;
+    }
+
+    iframe{
+        width: 350px;
+        height: 300px;
+    }
+
+    .map{
+        width: 300px;
+        height: 300px;
+    }
+
+    .resto-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .img-5{
+        grid-row: 6;
+        grid-column: 4;
+    }
+
+    .img-6{
+        grid-row: 6;
+        grid-column: 3;
+    }
+
+    .img-4{
+        grid-row: 3;
+        grid-column: 3;
+    }
+
+    .img-1{
+        grid-row: 3;
+        grid-column: 4;
+    }
+
+    .img-2{
+        grid-row: 4/span 2 ;
+        grid-column: 3 / span 2;
+        width: 499px;
+    }
+    
+    .img-3{
+        width: 499px;
+    }
 }
