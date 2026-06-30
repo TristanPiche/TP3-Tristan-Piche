@@ -1,0 +1,20 @@
+{
+  "name": "Big Burger Legacy",
+  "short_name": "BBL",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#120F1C",
+  "theme_color": "#7C3AED",
+  "icons": [
+    {
+      "src": "media/logo-site-web.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "media/logo-site-web.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
